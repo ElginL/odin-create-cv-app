@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import styles from './styles/App.module.css';
+import CVForm from './components/CVForm';
+import CVOutput from './components/CVOutput';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    const [selfIntroduction, setSelfIntroduction] = useState("");
+    const [generalInformation, setGeneralInformation] = useState({});
+    const [educationalExperience, setEducationalExperience] = useState([{
+        school: "",
+        achievement: "",
+        start: "",
+        end: "",
+        id: Math.random(1000)
+    }]);
+    const [workExperience, setWorkExperience] = useState([{
+        company: "",
+        position: "",
+        task: "",
+        start: "",
+        end: "",
+        id: Math.random(1000)
+    }]);
+
+    return (
+        <div className={styles["container"]}>
+            <CVForm
+                setSelfIntroduction={setSelfIntroduction}
+                setGeneralInformation={setGeneralInformation}
+                educationalExperience={educationalExperience}
+                setEducationalExperience={setEducationalExperience}
+                workExperience={workExperience}
+                setWorkExperience={setWorkExperience}
+            />
+            <CVOutput />
+        </div>
+    )
 }
 
 export default App;
