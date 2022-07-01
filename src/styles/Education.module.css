@@ -1,0 +1,24 @@
+.details {
+    margin: 0;
+}
+
+.details > strong {
+    font-size: 1.3rem;
+}
+
+.education-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

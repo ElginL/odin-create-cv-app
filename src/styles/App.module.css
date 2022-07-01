@@ -1,6 +1,43 @@
 .container {
     display: flex;
-    flex-direction: row;
     width: 100%;
     font-family: 'Rubik', sans-serif;
+    padding: 150px 100px 50px 100px;
+    background-color: lightgrey;
+    gap: 50px;
+    position: relative;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+footer > p {
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+.github-logo {
+    width: 75px;
+    height: 75px;
+}
+
+.top-bar {
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.top-bar > p {
+    margin: 0;
+    color: white;
+    font-size: 2.2rem;
 }

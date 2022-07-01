@@ -1,7 +1,6 @@
 .container {
-    width: 50%;
-    padding: 50px;
-    background-color: grey;
+    width: 45%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .form-container {
@@ -13,4 +12,37 @@
     background-color: #00487C;
     height: 75px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-card-design > p {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.file-input {
+    display: none;
+}
+
+.upload-btn {
+    width: 99%;
+    display: block;
+    margin: 10px;
+    background-color: orange;
+    font-size: 1.3rem;
+}
+
+.upload-btn:hover {
+    cursor: pointer;
+    background-color: rgb(225, 156, 29);
+    transition: background-color 0.5s;
+}
+
+.upload-btn-text {
+    text-align: center;
+    padding: 10px;
 }
