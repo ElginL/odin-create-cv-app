@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/odin-create-cv-app/static/css/main.dcc3bba9.css",
+    "main.js": "/odin-create-cv-app/static/js/main.a9752b65.js",
+    "static/media/blankProfile.png": "/odin-create-cv-app/static/media/blankProfile.a9136072d073801df253.png",
+    "index.html": "/odin-create-cv-app/index.html",
+    "main.dcc3bba9.css.map": "/odin-create-cv-app/static/css/main.dcc3bba9.css.map",
+    "main.a9752b65.js.map": "/odin-create-cv-app/static/js/main.a9752b65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcc3bba9.css",
+    "static/js/main.a9752b65.js"
+  ]
+}
