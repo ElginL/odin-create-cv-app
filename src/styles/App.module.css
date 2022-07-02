@@ -1,11 +1,11 @@
 .container {
     display: flex;
-    width: 100%;
-    font-family: 'Rubik', sans-serif;
-    padding: 150px 100px 50px 100px;
-    background-color: lightgrey;
     gap: 50px;
-    position: relative;
+    width: 80vw;
+    font-family: 'Rubik', sans-serif;
+    padding: 150px 10vw 50px 10vw;
+    background-color: lightgrey;
+    justify-content: space-between;
 }
 
 footer {
@@ -28,11 +28,15 @@ footer > p {
     height: 75px;
 }
 
+.page {
+    box-sizing: border-box;
+}
+
 .top-bar {
     background-color: black;
     padding: 20px;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 10;
 }
 
@@ -40,4 +44,11 @@ footer > p {
     margin: 0;
     color: white;
     font-size: 2.2rem;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        flex-direction: column;
+        align-items: 'center';
+    }
 }

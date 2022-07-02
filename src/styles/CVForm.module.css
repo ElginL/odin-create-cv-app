@@ -46,3 +46,9 @@
     text-align: center;
     padding: 10px;
 }
+
+@media (max-width: 1300px) {
+    .container {
+        width: 100%;
+    }
+}

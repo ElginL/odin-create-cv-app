@@ -11,7 +11,6 @@ const CVOutput = ({
     educationalExperience,
     workExperience
 }) => {
-    console.log(selectedImage);
     return (
         <div className={styles["top-container"]}>
             <div className={styles["container"]}>

@@ -10,6 +10,7 @@
 .container {
     position: sticky;
     top: 100px;
+    width: 100%;
 }
 
 .content-container {
@@ -49,4 +50,10 @@
 
 .information {
     margin: 10px 0 10px 0;
+}
+
+@media (max-width: 1300px) {
+    .top-container {
+        width: 100%;
+    }
 }
